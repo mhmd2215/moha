@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Playlist</title>
+    <style>
+        body{
+            background-color: black;
+        }
+	#video-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #video-player {
+        width:100%;
+        height: 0%;
+        margin: 0px;
+    }
+    
+    #playlist {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    #playlist ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #playlist li {
+        margin-bottom: 10px;
+    }
+    
+    #playlist li a {
+        display: block;
+        padding: 10px;
+        background-color: #eee;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    #playlist li a:hover {
+        background-color: #333;
+        color: #fff;
+    }
+    </style>
+</head>
+<body>
+	<div id="video-container">
+		<video id="video-player" controls autoplay>
+			<source src="video1.mp4" type="video/mp4">
+			<source src="video1.webm" type="video/webm">
+			<source src="video1.webm" type="video/m3u8">
+
+			Your browser does not support the video tag.
+		</video>
+		<div id="playlist">
+			<ul>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADjg442945')">الحلقة 1</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADjw442947')">الحلقة 2</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADkw442951')">الحلقة 3</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgAD_w442959')">الحلقة 4</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADBA442961')">الحلقة 5</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADHA442957')">الحلقة 6</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgAD5Q442949')">الحلقة 7</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgAD7Q442952')">الحلقة 8</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADtw442955')">الحلقة 9</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADGC442963')">الحلقة 10</a></li>
+
+				
+				http://130.193.165.22:80/Flussonic248/ArabicTVSeries2/Ja3farAl3omda-S01E30.mp4
+				    
+			
+			</ul>
+		</div>
+	</div>
+	<script>
+        function playVideo(src) {
+	var videoPlayer = document.getElementById("video-player");
+	videoPlayer.src = src;
+	videoPlayer.load();
+	videoPlayer.play();
+}
+    </script>
+</body>
+</html>

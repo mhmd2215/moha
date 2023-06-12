@@ -1,0 +1,382 @@
+<html><head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+    body {
+    padding:0;
+    margin:0;
+    user-select:none;
+    list-style:none;
+    background:#FFFFFF;
+    }
+    h3 {
+        text-align: right;
+        padding-right: 65px;
+        padding-top: 2px;
+        font-size: medium;
+        font-weight: 200;
+        font-family: 'Readex Pro', sans-serif;
+    
+    }
+    header {
+    background:rgba(188,17,21,255);
+    padding:2px;
+    color:#fff;
+    margin-bottom:10px;
+    position:fixed;
+    top:0;
+    height:60px;
+    width:100%;
+    box-shadow: 0px 0px 7px black;
+    z-index:1;
+    }
+    
+    #i1{
+    position:fixed;
+    top:21px;
+    
+    right:17px;
+    font-size:40px;
+    }
+    #i2{
+    position:fixed;
+    top:21px;
+    left:14px;
+    font-size:40px;
+    }
+    #i3{
+    position:fixed;
+    top:16px;
+    left:40px;
+    font-size:40px;
+    }
+    img {
+    width:30px
+    }
+    
+    #page:hover {
+    background:none;
+    }
+    #page {
+    margin-top:75px;
+    width:100%;
+    
+    }
+    
+    #page a:hover {
+    background:#111;
+    }
+    #page a {
+    height:50px;
+    padding-top:2px;
+    padding-bottom:2px;
+    margin-bottom:11px;
+    border:2px solid rgba(188,17,21,255);
+    border-radius:15px;
+    width:91%;
+    display:inline-block;
+    margin-right:14px;
+    margin-left:14px;
+    }
+    #page a img {
+    /*height:50px;
+    margin-right:10px;
+    width:50px;
+    padding-bottom:4px;
+    */
+        height: 50px;
+        margin-right: 10px;
+        width: 50px;
+        padding-bottom: 4px;
+    
+    
+    }
+    #page a p {
+    
+    /*text-align:center;
+    font-family: 'Readex Pro', sans-serif;
+    position:absolute;
+    margin-right:20px;
+    margin-top:13px;
+    display:inline-block;
+    font-weight:550;
+    color:rgba(188,17,21,255);
+    */
+    
+        text-align: center;
+        font-family: 'Readex Pro', sans-serif;
+        /* position: absolute; */
+        margin-right: 20px;
+        margin-top: -40px;
+        display: inline-block;
+        font-weight: 550;
+        color: rgba(188,17,21,255);
+    
+    
+    
+    }
+    </style>
+    <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+    
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background-color: #bc1115;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #fff;
+      display: block;
+      transition: 0.3s;
+          text-align: center;
+        font-family: 'Readex Pro', sans-serif;
+    
+    }
+    
+    .sidenav a:hover {
+      color: #d9c9c9;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+        right: 0;
+      font-size: 20px;
+      margin-left: 0px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <style>
+    .dropbtn {
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+          background: #bc1115;
+    
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+    }
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </head>
+    
+    <body dir="rtl">
+    
+    <header>
+    
+      <a href="go:http://action_products"><i id="i2" class="fa fa-Search" style="font-size: 20px; color: #fff; margin-top: 2px; "></i></a>
+    <!--- رابط --->
+   
+    
+    <!--- رابط الجدول --->
+    <i id="i3" style="font-size:30px;color:#fff">
+    <a href="go:101"><img src="https://i.imgur.com/IUP1A8c.png"></a></i>
+    
+    
+    <!--- اسم التطبيق --->
+    <h3> ALAseelTV </h3>
+    
+    <!--- القائمة --->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">اغلاق ×</a>
+    <a href="go:p0">الاقسام</a>
+    <a href="go:101">جدول المباريات</a>
+    <a href="https://t.me/moha123map">قناة التطبيق</a>
+    <a href="https://t.me/conectionmobot">الدعم الفني</a>
+    <a href="https://t.me/conectionmobot">طلبات المسلسلات والافلام</a>
+    <a href="fmcn.html"></a>
+    <a href="fmhn.html"></a>
+    <a href="fmws.html"></a>
+    </div>
+    
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+    <i id="i1" class="fa fa-bars" style="font-size:20px;color:#fff"></i>
+    
+    
+    
+    
+    </span>
+    
+    
+    
+    </header>
+    
+    <div id="page">
+    
+    <!--- اقسام التطبيق --->
+    
+    <a href="go:p1"><img src="https://e.top4top.io/p_2676kl3d81.jpg">
+    <center><p>سيرفر البث الرئيسي</p></center>
+    </a>
+    
+    <a href="go:p3"><img src="https://up6.cc/2023/04/16828225307331.png">
+    <center><p>المسلسلات العربيه</p></center>
+    </a>
+    
+    <a href="go:p2"><img src="https://up6.cc/2023/04/16828225307331.png">
+    <center><p>مسلسلات رمضان 2023</p></center>
+    </a>
+    <a href="go:p4"><img src="https://up6.cc/2023/04/16828225307331.png">
+    <center><p>الافلام العربيه</p></center>
+    </a>
+    <a href="go:p5"><img src="https://up6.cc/2023/04/16828225307331.png">
+    <center><p>الافلام الاجنبيه</p></center>
+    </a>
+    <a href="go:p6"><img src="https://up6.cc/2023/04/16828225307331.png">
+    <center><p>المسلسلات الاجنبيه</p></center>
+    </a>
+    <a href="go:p7"><img src="https://up6.cc/2023/04/16828225307331.png">
+    <center><p>المسلسلات التركية</p></center>
+    </a>
+    <a href="go:p8"><img src="https://up6.cc/2023/04/16828225307331.png">
+    <center><p>مسلسلات اسيوية</p></center>
+    </a>
+    <a href="go:p9"><img src="https://up6.cc/2023/04/16828225307331.png">
+    <center><p>حسب الطلب</p></center>
+    </a>
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    const APIURL =
+    "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1";
+const IMGPATH = "https://image.tmdb.org/t/p/w1280";
+const SEARCHAPI =
+    "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=";
+const moiveBox = document.querySelector("#movie-box")
+const getMovies = async (url) => {
+    const response = await fetch(url)
+    const data = await response.json()
+    showMovies(data)
+}
+getMovies(APIURL);
+
+
+const showMovies = (data) => {
+    moiveBox.innerHTML = "";
+    data.results.forEach(
+        (result) => {
+            const imagePath = result.poster_path === null ? "img/image-missing.png" : IMGPATH + result.poster_path;
+            // const box = `
+            // <div class="box">
+            //     <img src="${IMGPATH+result}" alt="" />
+            //     <div class="overlay">
+            //         <h2>Overview:</h2>
+            //         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis iste doloribus quam voluptatum, illum unde nostrum dignissimos, mollitia, sapiente porro natus neque cupiditate distinctio quod possimus aliquid reiciendis vel. Soluta?
+            //     </div>
+            // </div>
+            // `
+            const box = document.createElement("div")
+            box.classList.add("box")
+            box.innerHTML = `
+                <img src="${imagePath}" alt="" />
+                <div class="overlay">
+                    <div class="title"> 
+                        <h2> ${result.original_title}  </h2>
+                        <span> ${result.vote_average} <span>
+                    </div>
+                    <h3>Overview:</h3>
+                    <p> 
+                        ${result.overview}
+                    </p>
+                 </div>
+            `
+            moiveBox.appendChild(box)
+        }
+    )
+}
+
+document.querySelector("#search").addEventListener(
+    "keyup",
+    function (event) {
+        if (event.target.value != "") {
+            getMovies(SEARCHAPI + event.target.value)
+        } else {
+            getMovies(APIURL);
+        }
+    }
+)
+    </script>
+    
+    
+    </body></html>

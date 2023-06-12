@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Playlist</title>
+    <style>
+        body{
+            background-color: black;
+        }
+	#video-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #video-player {
+        width:100%;
+        height: 0%;
+        margin: 0px;
+    }
+    
+    #playlist {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    #playlist ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #playlist li {
+        margin-bottom: 10px;
+    }
+    
+    #playlist li a {
+        display: block;
+        padding: 10px;
+        background-color: #eee;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    #playlist li a:hover {
+        background-color: #333;
+        color: #fff;
+    }
+    </style>
+</head>
+<body>
+	<div id="video-container">
+	
+		<div id="playlist">
+			<ul>
+				<li><a href="go:200" onclick="playVideo('')">الحلقة 1</a></li>
+				<li><a href="go:201" onclick="playVideo('')">الحلقة 2</a></li>
+				<li><a href="go:202" onclick="playVideo('')">الحلقة 3</a></li>
+				<li><a href="go:203" onclick="playVideo('')">الحلقة 4</a></li>
+				<li><a href="go:204" onclick="playVideo('')">الحلقة 5</a></li>
+				<li><a href="go:205" onclick="playVideo('')">الحلقة 6</a></li>
+				<li><a href="go:206" onclick="playVideo('')">الحلقة 7</a></li>
+				<li><a href="go:207" onclick="playVideo('')">الحلقة 8</a></li>
+				<li><a href="go:208" onclick="playVideo('')">الحلقة 9</a></li>
+				<li><a href="go:209" onclick="playVideo('')">الحلقة 10</a></li>
+				<li><a href="go:210" onclick="playVideo('')">الحلقة 11</a></li>
+				<li><a href="go:211" onclick="playVideo('')">الحلقة 12</a></li>
+				<li><a href="go:212" onclick="playVideo('')">الحلقة 13</a></li>
+				<li><a href="go:213" onclick="playVideo('')">الحلقة 14</a></li>
+				<li><a href="go:214" onclick="playVideo('')">الحلقة 15</a></li>
+				<li><a href="go:215" onclick="playVideo('')">الحلقة 16</a></li>
+		
+		         		
+		
+				    
+			
+			</ul>
+		</div>
+	</div>
+	<script>
+        function playVideo(src) {
+	var videoPlayer = document.getElementById("video-player");
+	videoPlayer.src = src;
+	videoPlayer.load();
+	videoPlayer.play();
+}
+    </script>
+</body>
+</html>

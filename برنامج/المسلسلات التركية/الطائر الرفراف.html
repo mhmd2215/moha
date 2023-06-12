@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Playlist</title>
+    <style>
+        body{
+            background-color: black;
+        }
+	#video-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #video-player {
+        width:100%;
+        height: 0%;
+        margin: 0px;
+    }
+    
+    #playlist {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    #playlist ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #playlist li {
+        margin-bottom: 10px;
+    }
+    
+    #playlist li a {
+        display: block;
+        padding: 10px;
+        background-color: #eee;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    #playlist li a:hover {
+        background-color: #333;
+        color: #fff;
+    }
+    </style>
+</head>
+<body>
+	<div id="video-container">
+		<video id="video-player" controls autoplay>
+			<source src="video1.mp4" type="video/mp4">
+			<source src="video1.webm" type="video/webm">
+			<source src="video1.webm" type="video/m3u8">
+
+			Your browser does not support the video tag.
+		</video>
+		<div id="playlist">
+			<ul>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADXC462951')">الحلقة 1</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADVD462953')">الحلقة 2</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgAD2C462955')">الحلقة 3</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADjC462959')">الحلقة 4</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADWC462957')">الحلقة 5</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADsT463036')">الحلقة 6</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgAD0y463042')">الحلقة 7</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADCi463054')">الحلقة 8</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADxj463047')">الحلقة 9</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADzz463049')">الحلقة 10</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADXj463052')">الحلقة 11</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADaC463038')">الحلقة 12</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADCC463040')">الحلقة 13</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADpS463043')">الحلقة 14</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADWj463046')">الحلقة 15</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADZy463102')">الحلقة 16</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADaD463108')">الحلقة 17</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADZ0463113')">الحلقة 18</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADVz463115')">الحلقة 19</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADpj463114')">الحلقة 20</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADUi463109')">الحلقة 21</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADbi463104')">الحلقة 22</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADIi463106')">الحلقة 23</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADOy463118')">الحلقة 24</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADuT463112')">الحلقة 25</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgAD2D463295')">الحلقة 26</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADry463297')">الحلقة 27</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADuy463301')">الحلقة 28</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADAz463299')">الحلقة 29</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgAD4i463305')">الحلقة 30</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgAD8y463316')">الحلقة 31</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADoD463318')">الحلقة 32</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgAD6T463320')">الحلقة 33</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADmg463322')">الحلقة 34</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgADAz463324')">الحلقة 35</a></li>
+				<li><a href="#" onclick="playVideo('http://direct.safone.me/AgAD0j473589')">الحلقة 36</a></li>
+		         		
+		
+				    
+			
+			</ul>
+		</div>
+	</div>
+	<script>
+        function playVideo(src) {
+	var videoPlayer = document.getElementById("video-player");
+	videoPlayer.src = src;
+	videoPlayer.load();
+	videoPlayer.play();
+}
+    </script>
+</body>
+</html>
